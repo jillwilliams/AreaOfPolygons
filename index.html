@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" Unicode="U+00 A9, UTF-8: C2 A9">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculating the Area of Polygons</title>
+    <link HREF="https://fonts.googleapis.com/css?family=Dancing+Script|Felipa|Permanent+Marker|Indie+Flower|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" HREF="./styles.css">
+</head>
+<body>
+  <h1 id="h1">Calculating the Area of Polygons</h1>
+  <div id="areaFormulas">
+    <p>
+      <p>Formulas to Calculate</p>
+      <p>the</p>
+      <p>Area of Polygons</p>
+    </p>
+    <p>
+      <img src='./images/areaFormulas.png' alt="area formulas" id="areaImage" />
+    </p>
+  </div>
+  <p>
+    This program provides online calculators that will do the Area calculations for you.
+  </p>
+  </div>
+    <p id="gettingStarted">Each Area calculator is shown below. Type in the side lengths and
+        click on the 'Submit' button to get the answer for the Area. It's that easy!
+    </p>
+  </div>
+
+<!-- TRIANGLE -->
+  <div>
+    <p id="calculators">
+        Area of a Triangle
+    </p>
+    <table id="table">
+      <tr>
+        <td>
+          <img src="images/triangle.png" alt="triangle" id="triangleImage" />
+        </td>
+        <td>
+          base = <br>
+          <input type="text" id="myBase">
+        </td>
+        <td>
+            height = <br>
+            <input type="text" id="myHeight">
+        </td>
+        <td>
+            <button 
+            type="submit" 
+            onClick="myArea( )" 
+            id="submitButton">
+              Submit
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <p id="demo">
+    The Answer is:
+  </p>
+
+<!-- RECTANGLE -->
+  <div>
+      <p id="calculators">
+          Area of a Rectangle
+      </p>
+      <table id="table">
+        <tr>
+          <td>
+            <img src="images/rectangle.png" alt="rectangle" id="rectangleImage" />
+          </td>
+          <td>
+            length = <br>
+            <input type="text" id="myRLength">
+          </td>
+          <td>
+              width = <br>
+              <input type="text" id="myRWidth">
+          </td>
+          <td>
+            <button 
+              type="submit" 
+              onClick="myArea3( )" 
+              id="submitButton">
+                Submit
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  <p id="demo3">
+    The Answer is:
+  </p>
+
+<!-- SQUARE -->
+  <div>
+    <p id="calculators">
+        Area of a Square
+    </p>
+    <table id="table">
+      <tr>
+        <td>
+          <img src="images/square.png" alt="square" id="squareImage" />
+        </td>
+        <td>
+          Side length = <br>
+          <input type="text" id="mySquare">
+        </td>
+        <td>
+          <button 
+            type="submit" 
+            onClick="myArea2( )" 
+            id="submitButton">
+              Submit
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <p id="demo2">
+    The Answer is:
+  </p>
+
+<!-- PARALLELOGRAM -->
+  <div>
+      <p id="calculators">
+          Area of a Parallelogram
+      </p>
+      <table id="table">
+        <tr>
+          <td>
+            <img src="images/parallelogram.png" alt="parallelogram" id="parallelogramImage" />
+          </td>
+          <td>
+            base = <br>
+            <input type="text" id="myPLength">
+          </td>
+          <td>
+            height = <br>
+            <input type="text" id="myPWidth">
+          </td>
+          <td>
+            <button 
+              type="submit" 
+              onClick="myArea4( )" 
+              id="submitButton">
+                Submit
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  <p id="demo4">
+    The Answer is:
+  </p>
+
+  <!-- RHOMBUS -->
+  <div>
+      <p id="calculators">
+          Area of a Rhombus
+      </p>
+      <table id="table">
+        <tr>
+          <td>
+            <img src="images/rhombus.png" alt="rhombus" id="rhombusImage" />
+          </td>
+          <td>
+            diagonal<sub>1</sub> = <br>
+            <input type="text" id="myRD1">
+          </td>
+          <td>
+            diagonal<sub>2</sub> = <br>
+            <input type="text" id="myRD2">
+          </td>
+          <td>
+            <button 
+              type="submit" 
+              onClick="myArea5( )" 
+              id="submitButton">
+                Submit
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  <p id="demo5">
+    The Answer is:
+  </p>
+
+
+<!-- KITE -->
+  <div>
+      <p id="calculators">
+          Area of a Kite
+      </p>
+      <table id="table">
+        <tr>
+          <td>
+            <img src="images/kite.png" alt="kite" id="kiteImage" />
+          </td>
+          <td>
+            diagonal<sub>1</sub> = <br>
+            <input type="text" id="myKD1">
+          </td>
+          <td>
+            diagonal<sub>2</sub> = <br>
+            <input type="text" id="myKD2">
+          </td>
+          <td>
+            <button 
+              type="submit" 
+              onClick="myArea6( )" 
+              id="submitButton">
+                Submit
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  <p id="demo6">
+    The Answer is:
+  </p>
+
+  <!-- TRAPEZOID -->
+  <div>
+      <p id="calculators">
+          Area of a Trapezoid
+      </p>
+      <table id="table">
+        <tr>
+          <td>
+            <img src="images/trapezoid.png" alt="trapezoid" id="trapezoidImage" />
+          </td>
+          <td>
+            base<sub>1</sub> = <br>
+            <input type="text" id="myTB1">
+          </td>
+          <td>
+            base<sub>2</sub> = <br>
+            <input type="text" id="myTB2">
+          </td>
+          <td>
+            height = <br>
+            <input type="text" id="myTHeight">
+            </td>
+          <td>
+            <button 
+              type="submit" 
+              onClick="myArea7( )" 
+              id="submitButton">
+                Submit
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  <p id="demo7">
+    The Answer is:
+  </p>
+
+<!-- REGULAR PENTAGON -->
+  <div>
+    <p id="calculators">
+        Area of a Regular Pentagon
+    </p>
+    <table id="table">
+      <tr>
+        <td>
+          <img src="images/pentagon.png" alt="pentagon" id="PImage" />
+        </td>
+        <td>
+          side length = <br>
+            <input type="text" id="myPentaSide">
+        </td>
+        <td>
+          <button 
+            type="submit" 
+            onClick="myArea8( )" 
+            id="submitButton">
+              Submit
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <p id="demo8">
+    The Answer is:
+  </p>
+
+<!-- REGULAR HEXAGON -->
+  <div>
+    <p id="calculators">
+        Area of a Regular Hexagon
+    </p>
+    <table id="table">
+      <tr>
+        <td>
+          <img src="images/hexagon.png" alt="hexagon" id="HImage" />
+        </td>
+        <td>
+          side length = <br>
+            <input type="text" id="myHexaSide">
+        </td>
+        <td>
+          <button 
+            type="submit" 
+            onClick="myArea9( )" 
+            id="submitButton">
+              Submit
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <p id="demo9">
+    The Answer is:
+  </p>
+
+
+<!-- REGULAR HEPTAGON -->
+  <div>
+    <p id="calculators">
+        Area of a Regular Heptagon
+    </p>
+    <table id="table">
+      <tr>
+        <td>
+          <img src="images/heptagon.png" alt="heptagon" id="HeptaImage" />
+        </td>
+        <td>
+          side length = <br>
+            <input type="text" id="myHeptaSide">
+        </td>
+        <td>
+          <button 
+            type="submit" 
+            onClick="myArea10( )" 
+            id="submitButton">
+              Submit
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <p id="demo10">
+    The Answer is:
+  </p>
+
+<!-- REGULAR OCTAGON -->
+  <div>
+    <p id="calculators">
+        Area of a Regular Octagon
+    </p>
+    <table id="table">
+      <tr>
+        <td>
+          <img src="images/octagon.png" alt="octagon" id="OctaImage" />
+        </td>
+        <td>
+          side length = <br>
+            <input type="text" id="myOctaSide">
+        </td>
+        <td>
+          <button 
+            type="submit" 
+            onClick="myArea11( )" 
+            id="submitButton">
+              Submit
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <p id="demo11">
+    The Answer is:
+  </p>
+  <div>
+    <p id="calculators">
+        <!-- End of Area Calculations -->
+    </p>
+  </div>
+
+  <p id="recall">
+    Quick Recall:
+  </p>
+  <div id="recall">
+    <p>
+      In Algebra, the multiply sign “x” is not used due to confusion when 
+      solving equations for ‘x’ and working with concepts like ordered 
+      pairs (x, y) containing variable ‘x’. For example: the ordered pair 
+      (3, 6) contains a value of
+    </p>
+    <p>
+      x = 3 and y = 6
+    </p>
+    <p>
+      Make sure that when you are working with multiplication in Algebra, 
+      a single dot is placed between the two values to be multiplied.
+    </p>
+    <p>
+      Example:  5 x 4 is the same as 5∙4  
+    </p>
+    <p>
+      notice x has been replaced with the dot used to represent multiplication
+    </p>
+    <p>
+      Each of these expressions have the same answer: 20. These equations are 
+      therefore called "Equivalent Expressions". They are 'Equivalent' because both their 
+      answers 'Equal' the same number, in this case, 20. 
+    </p>
+  </div>
+  <p>
+      The formulas for the "Regular" polygons used here differ from the ones you can 
+      Google due to the fact that they were simplified to the easiest method to type them into a 
+      regular calculator if you wanted to calculate the answer by hand.
+  </p>
+  <p>
+    Here, we simply use the formulas, regardless of their origination.  
+    They can calculate the answers for us quickly and easily. There is no need
+    for manual calculations when using this program (which are often time-consuming and 
+    slow down the process in calculating the answer).
+  </p>
+  <p>
+      If you would like to learn more about where the formulas 
+      originate from, please refer to Google for additional reading and information as this 
+      will be covered in later sections of math. 
+  </p>
+  
+  <footer id="footer">©2019 ALLTHINGSMATH.US  ALL RIGHTS RESERVED
+  </footer>
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

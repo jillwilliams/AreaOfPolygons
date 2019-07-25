@@ -1,0 +1,142 @@
+body {
+  margin: 15px 15px;
+  background-color: #FFFFCC;
+  background-attachment: fixed;
+  font-size: 1.3rem;
+  font-family: 'Shadows Into Light', cursive;
+  color: red;
+  letter-spacing: 3px;
+}
+/* TEXT:     TITLE  "Calculating the Area of Polygons */
+#h1 {
+  font-size: 1.7rem;
+  color: teal;
+  text-align: center;
+  font-family: "", cursive, sans-serif;
+  letter-spacing:5px;
+}
+/* TEXT:  "FORMULAS TO CALCULATE THE AREA OF POLYGONS" */
+#areaFormulas {
+  font-size: 1.3rem;
+  color: teal;
+  text-align: center;
+  font-family: "Dancing Script", cursive, sans-serif;
+  letter-spacing: 4px;
+}
+/* IMAGE OF AREA FORMULAS */
+#areaImage {
+  width: 40rem;
+  height: auto;
+  border: 3px #FF3333 solid;
+  outline: 2px black solid;
+}
+/* DIV:    DIVIDER: title of AREA CALCUALTIONS */
+#calculators {
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  color: white;
+  background-color: teal;
+  border: 1px black solid;
+  outline: 1px red solid;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* INPUT BUTTONS FOR THE SIDES MEASURES */
+#myBase, #myHeight, #mySquare, #myRectangle, #myPLength,
+#myPWidth, #myRLength, #myRWidth, #myRD1, #myRD2, 
+#myKD1, #myKD2, #myTB1, #myTB2, #myTHeight, #myPentaSide, #myHexaSide, 
+#myHeptaSide, #myOctaSide {
+  font-size: 1.5rem;
+  color: teal;
+  width: 5rem;
+  height: 4rem;
+  display: inline-block;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 15%;
+  text-align: center;
+}
+/* RETURN TEXT-BOX FOR ANSWER RETURN TO UI */
+#demo, #demo2, #demo3, #demo4, #demo5, #demo6, #demo7, #demo8, #demo9, 
+#demo10, #demo11{
+  font-size: 1.5rem;
+  color: teal;
+  width: 10rem;
+  height: 2rem;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  padding: 5px;
+  letter-spacing: 2px;
+  border-radius: 15%;
+  border: 1px black solid;
+  margin-top: 10px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+}
+/* TABLE PROPERTIES:  INPUT BUTTONS FORMATTING */
+#table {
+  width: 35rem;
+  height: auto;
+  padding: 15px;
+  margin: 10px;
+  column-width: 20%;
+  grid-row: 24%;
+}
+/* BUTTON:   SUBMIT BUTTON FORMATTING */
+#submitButton {
+  font-size: 1.3rem;
+  color: teal;
+  width: 5rem;
+  height: 4rem;
+  display: inline-block;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  letter-spacing: 1px;
+  border-color: 1px teal solid;
+  border-radius: 15%;
+  margin-top: 36px;
+}
+#submitButton:hover {
+  color: black;
+  border: 3px red solid;
+  background-color: #FFFFCC;
+}
+/* TEXT:  RECALL MULTIPLICATION REQUIRES A DOT NOT x */
+#recall {
+  font-size: 1rem;
+  color: black;
+  font-family: 'Indie Flower', cursive;
+}
+/* FOOTER */
+#footer {
+  font-size: 0.8rem;
+  font-family: 'Indie Flower', sans-serif;
+  color: teal;
+  text-align: center;
+}
+#kiteImage {
+  width: 8rem;
+  height: auto;
+}
+
+/* font-family: 'Indie Flower', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Shadows Into Light', cursive; 
+'Permanent Marker', 'Felipa' */
+/* COLOR COMBINATION */
+/* RED: #FF3333;
+BLUE: TEAL;
+YELLOW: #FFFFCC;
+BLACK */
+
+
+
+
+
+
